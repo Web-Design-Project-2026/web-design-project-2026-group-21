@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/* Ensures that images are responsive and do not overflow their containers */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Makes the header "float" at the top of the page */
 
 header {
@@ -46,5 +53,71 @@ h3 {
     Playfair Display,
     serif;
   font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Footer styling */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 3rem 4rem;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+}
+
+/* Menu and Follow Us sections */
+
+footer h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+  white-space: nowrap;
+}
+
+/* Spring Inspiration logo and the copyright text */
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Copyright text */
+
+.footer-logo p {
+  white-space: nowrap;
+}
+
+/* Social media links */
+
+.footer-social a {
+  color: #f5f5f5;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link {
+  color: #f5f5f5;
   text-decoration: none;
 }
