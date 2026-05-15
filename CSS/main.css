@@ -42,7 +42,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 3rem;
   gap: 1rem;
   margin: 0;
 }
@@ -54,6 +54,20 @@ h3 {
     serif;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+.nav-spacer {
+  flex: 1;
+}
+
+/* Controls home and cart icons in the navigation bar */
+
+.nav-icon {
+  width: 2rem;
+  height: auto;
+  filter: invert(
+    100%
+  ); /* Inverts the colours of the icons from black to white */
 }
 
 /* Footer styling */
