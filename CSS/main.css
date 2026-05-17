@@ -75,11 +75,20 @@ h3 {
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-stretch;
   gap: 3rem;
   padding: 3rem 4rem;
   background-color: #0a0a0a;
   color: #f5f5f5;
+}
+
+/* Alligns all of the footer sections so that they are the same height and have space between them */
+.footer-logo,
+.footer-nav,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Menu and Follow Us sections */
@@ -90,7 +99,7 @@ footer h4 {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #f5f5f5;
+  color: #744976;
   white-space: nowrap;
 }
 
