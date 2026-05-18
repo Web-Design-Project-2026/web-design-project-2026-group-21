@@ -49,6 +49,33 @@
             <p>Review your items and proceed to secure your tickets.</p>
           </div>
         </section>
+
+        <section class="cart-content">
+          <h2>Your items (<span id="cart-count">2</span>)</h2>
+
+          <!--Temporary test item. Later this will come from tickets page/localStorage.-->
+
+          <div class="cart-item" data-price="529">
+            <div class="cart-item-info">
+              <h3>Premium Seating</h3>
+              <p>June 15th 2026</p>
+              <p>Jönköping Science Park</p>
+            </div>
+
+            <p class="cart-price">529 SEK</p>
+
+            <div class="cart-quantity">
+              <button class="minus-btn">-</button>
+              <span class="quantity-number">1</span>
+              <button class="plus-btn">+</button>
+            </div>
+          </div>
+          <div class="cart-total">
+            <p>Total: <span id="cart-total">529 SEK</span></p>
+            <button>Checkout</button>
+          </div>
+          <button class="continue-shopping">← Continue Shopping</button>
+        </section>
       </div>
     </main>
 
