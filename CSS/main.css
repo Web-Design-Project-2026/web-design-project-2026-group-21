@@ -529,3 +529,124 @@ footer h4 {
   line-height: 1.4;
   max-width: 240px;
 }
+
+/* TICKETS PAGE */
+
+/* Main tickets page background and text color */
+.tickets-page {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+}
+
+/* Hero section */
+.tickets-hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero image and dark overlay */
+.tickets-hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tickets-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient (to right, rgba (0, 0, 0.95), rgba (0, 0, 0.25));
+}
+
+/* Hero image text */
+.tickets-hero-text {
+  position: relative;
+  z-index: 2;
+  padding-left: 70px;
+  max-width: 520px;
+}
+
+/* TICKETS heading and text under heading */
+.tickets-hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.tickets-hero-text p {
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 1.6;
+}
+
+/* Ticket card section */
+.ticket.options {
+  padding: 40px 50px;
+  background-color: #0a0a0a;
+}
+
+.ticket-options h2 {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* container for all ticket cards */
+.ticket-cards {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.ticket-card {
+  border: 1px solid #2b2b2b;
+  padding: 25px;
+  width: 260px;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.ticket-card p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #f5f5f5;
+}
+
+/* ticket price */
+.ticket-price {
+  color: #744976 !important;
+  font-size: 20px !important;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/* add to cart button */
+.add-to-cart-btn {
+  background-color: #744976;
+  color: #f5f5f5;
+  border: none;
+  padding: 12px 35px;
+  text-transform: uppdercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: 170px;
+}
