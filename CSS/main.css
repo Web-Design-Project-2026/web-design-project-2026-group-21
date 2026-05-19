@@ -249,6 +249,41 @@ h3 {
   }
 }
 
+/* Gallery page styling */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.gallery-item-horizontal {
+  grid-column: 1 / -1;
+}
+
+.gallery-item-horizontal img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gallery-item-vertical img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive design for the gallery page */
+
 /* Footer styling */
 
 footer {
