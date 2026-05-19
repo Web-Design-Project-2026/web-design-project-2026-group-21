@@ -180,10 +180,13 @@ footer h4 {
 
 /* CART PAGE */
 
+/* Main cart page background and text color */
 .cart-page {
   background-color: #0a0a0a;
   color: #f5f5f5;
 }
+
+/* Hero section */
 .cart-hero {
   position: relative;
   height: 520px;
@@ -192,6 +195,7 @@ footer h4 {
   align-items: center;
 }
 
+/* Hero image and dark overlay on top */
 .cart-image {
   position: absolute;
   width: 100%;
@@ -206,12 +210,14 @@ footer h4 {
     (to right, rgba (0, 0, 0, 0.95), rgba (0, 0, 0, 0.35));
 }
 
+/* Hero image text */
 .cart-hero-text {
   position: relative;
   z-index: 2;
   padding-left: 90px;
 }
 
+/* Main Cart heading*/
 .cart-hero-text h1 {
   font-family: "Playfair Display", serif;
   font-size: 90px;
@@ -219,6 +225,7 @@ footer h4 {
   font-weight: normal;
 }
 
+/* Text under the Cart heading*/
 .cart-hero-text p {
   max-width: 420px;
   font-size: 18px;
@@ -226,11 +233,13 @@ footer h4 {
   line-height: 1.5;
 }
 
+/* Content area under the hero section */
 .cart-content {
   padding: 50px;
   background-color: #0a0a0a;
 }
 
+/* "Your items" heading and ticket info */
 .cart-content h2 {
   color: #744976;
   font-size: 16px;
@@ -239,7 +248,7 @@ footer h4 {
   margin-bottom: 20px;
 }
 
-.cart.item {
+.cart-item {
   border: 1px solid #2b2b2b;
   padding: 25px;
   display: grid;
@@ -249,7 +258,7 @@ footer h4 {
   margin-bottom: 10px;
 }
 
-.cart.item-info h3 {
+.cart-item-info h3 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -269,6 +278,7 @@ footer h4 {
   letter-spacing: 2px;
 }
 
+/* Quantity box */
 .cart-quantity {
   border: 1px solid #2b2b2b;
   width: 130px;
@@ -291,6 +301,7 @@ footer h4 {
   font-size: 18px;
 }
 
+/* Total price section */
 .cart-total {
   border: 1px solid #2b2b2b;
   padding: 20px 35px;
@@ -300,6 +311,7 @@ footer h4 {
   align-items: center;
 }
 
+/* Continue shopping button */
 .continue-shopping {
   margin-top: 30px;
   background: transparent;
@@ -308,8 +320,13 @@ footer h4 {
   padding: 12px 30px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.continue-shopping:hover {
+  background-color: #4b4b4b;
+}
+/* Total price */
 .cart-total p {
   font-size: 20px;
   text-transform: uppercase;
@@ -320,6 +337,7 @@ footer h4 {
   color: #744976;
 }
 
+/* Checkout button */
 .cart-total button {
   background-color: #744976;
   color: #f5f5f5;
@@ -330,6 +348,7 @@ footer h4 {
   cursor: pointer;
 }
 
+/* Information box section */
 .cart-info {
   border: 1px solid #2b2b2b;
   margin-top: 20px;
