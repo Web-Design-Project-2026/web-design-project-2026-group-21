@@ -125,6 +125,13 @@ h3 {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+/* Makes the button a darker shade of purple when hovered over */
+
+.button-tickets:hover {
+  background-color: #5a3560;
 }
 
 /* Styling for the "VIEW MORE" button */
@@ -138,6 +145,13 @@ h3 {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+/* Makes the button a lighter shade of grey when hovered over */
+
+.button-more:hover {
+  background-color: #4b4b4b;
 }
 
 /* About Spring Inspiration section styling */
