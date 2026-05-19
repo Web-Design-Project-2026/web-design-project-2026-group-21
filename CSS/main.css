@@ -569,6 +569,44 @@ footer h4 {
   max-width: 520px;
 }
 
+/* Event info row under hero section*/
+.event-info {
+  background-color: #0a0a0a;
+  padding: 25px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  border-bottom: 1px solid #2b2b2b;
+}
+/* Each event info block */
+.event-info-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Temporary icon */
+.event-icon {
+  color: #744976;
+  font-size: 28px;
+}
+
+/* Event info headings */
+.event-info-item h3 {
+  color: #744976;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+
+/* Event info text */
+.event-info-item {
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
 /* TICKETS heading and text under heading */
 .tickets-hero-text h1 {
   font-family: "Playfair Display", serif;
