@@ -150,8 +150,10 @@ h3 {
 
 .about-text {
   flex: 1;
+  font-weight: 300;
   text-align: center;
   margin-top: 5rem;
+  line-height: 1.6;
 }
 
 .about-text h2 {
@@ -171,20 +173,35 @@ h3 {
 
 /* Responsive design for the About section */
 
+/* Desktop version */
+
 @media (min-width: 1200px) {
   .about {
     flex-direction: row;
   }
 }
-the @media (max-width: 1000px) {
+
+/* Mobile and tablet version */
+
+@media (max-width: 1000px) {
   .about {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 2rem;
+  }
+
+  .about-image {
+    margin: 0 -2rem;
   }
 
   .about-image img {
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .about-text {
+    padding: 0 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
