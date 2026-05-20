@@ -531,6 +531,17 @@ footer h4 {
   align-items: center;
 }
 
+.cart-total button {
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.cart-total button:hover {
+  background-color: #5a3560;
+  transform: translateY(-2px);
+}
+
 /* Continue shopping button */
 .continue-shopping {
   display: inline-block;
