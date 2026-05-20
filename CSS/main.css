@@ -260,6 +260,7 @@ h3 {
 
 .gallery-item-horizontal {
   grid-column: 1 / -1;
+  position: relative;
 }
 
 .gallery-item-horizontal img {
@@ -280,6 +281,34 @@ h3 {
   height: 1000px;
   object-fit: cover;
   display: block;
+}
+
+/* Positioning the logos on top of the images in the gallery */
+
+.gallery-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.logo-koonverd {
+  filter: invert(100%);
+}
+
+/* Makes the logos bigger on desktop mode */
+
+@media (min-width: 1200px) {
+  .gallery-logo img {
+    width: 400px;
+  }
 }
 
 /* Responsive design for the gallery page */
