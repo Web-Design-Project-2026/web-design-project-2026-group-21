@@ -51,27 +51,14 @@
         </section>
 
         <section class="cart-content">
-          <h2>Your items (<span id="cart-count">2</span>)</h2>
+          <h2>Your items (<span id="cart-count">0</span>)</h2>
 
-          <!--Temporary test item. Later this will come from tickets page/localStorage.-->
+          <!--Cart items will be added here from localStorage.-->
 
-          <div class="cart-item" data-price="529">
-            <div class="cart-item-info">
-              <h3>Premium Seating</h3>
-              <p>June 15th 2026</p>
-              <p>Jönköping Science Park</p>
-            </div>
+          <div id="cart-items"></div>
 
-            <p class="cart-price">529 SEK</p>
-
-            <div class="cart-quantity">
-              <button class="minus-btn">-</button>
-              <span class="quantity-number">1</span>
-              <button class="plus-btn">+</button>
-            </div>
-          </div>
           <div class="cart-total">
-            <p>Total: <span id="cart-total">529 SEK</span></p>
+            <p>Total: <span id="cart-total">0 SEK</span></p>
             <button>Checkout</button>
           </div>
 
@@ -157,5 +144,6 @@
         </a>
       </div>
     </footer>
+    <script src="JS/cart.js"></script>
   </body>
 </html>
