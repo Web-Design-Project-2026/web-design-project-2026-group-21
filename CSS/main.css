@@ -776,3 +776,45 @@ footer h4 {
   font-size: 28px !important;
   white-space: nowrap;
 }
+
+/* FAQ section */
+.faq-section {
+  background-color: #0a0a0a;
+  padding: 0 50px 60px;
+}
+
+.faq-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #2b2b2b;
+  padding: 30px;
+}
+
+.faq-section h2 {
+  font-family: "Playfair Display", serif;
+  color: #744976;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.faq-item h3 {
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  color: #f5f5f5;
+  font-size: 14px;
+  line-height: 1.4;
+}
