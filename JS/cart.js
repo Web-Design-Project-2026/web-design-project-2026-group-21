@@ -2,6 +2,8 @@ const cartItemsContainer = document.getElementById("cart-items");
 const cartCount = document.getElementById("cart-count");
 const cartTotal = document.getElementById("cart-total");
 const emptyCartMessage = document.getElementById("empty-cart-message");
+const checkoutBtn = document.getElementById("checkout-btn");
+const checkoutMessage = document.getElementById("checkout-message");
 
 function renderCart() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -81,5 +83,19 @@ function updateQuantity(ticketName, change) {
 
   renderCart();
 }
+
+checkoutBtn.addEventListener("click", () => {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  if (cart.length === 0) {
+    checkoutMessage.textContent = "";
+    return;
+  }
+
+  localStorage.removeItem("cart");
+  checkoutMessage.textContent = "Thank you! Your order has been placed.";
+
+  renderCart();
+});
 
 renderCart();

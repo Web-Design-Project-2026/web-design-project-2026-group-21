@@ -496,6 +496,14 @@ footer h4 {
   cursor: pointer;
 }
 
+/* Checkout message */
+#checkout-message {
+  color: #744976;
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
 /* Information box section */
 .cart-info {
   border: 1px solid #2b2b2b;
@@ -585,7 +593,7 @@ footer h4 {
   gap: 18px;
 }
 
-/* Temporary icon */
+/* icon */
 .event-icon {
   width: 28px;
   height: 28px;
