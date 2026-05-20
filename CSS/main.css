@@ -159,6 +159,7 @@ h3 {
 
 .button-tickets:hover {
   background-color: #5a3560;
+  transform: translateY(-2px);
 }
 
 /* Styling for the "VIEW MORE" button */
@@ -179,6 +180,7 @@ h3 {
 
 .button-more:hover {
   background-color: #4b4b4b;
+  transform: translateY(-2px);
 }
 
 /* Responsive design for the hero section */
