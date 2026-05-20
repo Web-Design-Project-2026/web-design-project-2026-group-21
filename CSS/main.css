@@ -821,6 +821,16 @@ footer h4 {
   grid-template-columns: 1.2fr 1fr;
   gap: 50px;
   align-items: center;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.after-party-content:hover {
+  transform: translateY(-8px);
+  border-color: #744976;
+  box-shadow: 0 10px 25px rgba(116, 73, 118, 0.25);
 }
 
 /* Image on the left side */
