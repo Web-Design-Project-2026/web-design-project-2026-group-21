@@ -587,8 +587,10 @@ footer h4 {
 
 /* Temporary icon */
 .event-icon {
-  color: #744976;
-  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 /* Event info headings */
