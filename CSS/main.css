@@ -283,7 +283,7 @@ h3 {
   display: block;
 }
 
-/* Positioning the logos on top of the images in the gallery */
+/* Logos on top of the images in the gallery */
 
 .gallery-logo {
   position: absolute;
@@ -295,20 +295,12 @@ h3 {
 }
 
 .gallery-logo img {
-  width: 150px;
+  max-width: clamp(150px, 20vw, 400px);
   height: auto;
 }
 
 .logo-koonverd {
   filter: invert(100%);
-}
-
-/* Makes the logos bigger on desktop mode */
-
-@media (min-width: 1200px) {
-  .gallery-logo img {
-    width: 400px;
-  }
 }
 
 /* Responsive design for the gallery page */
