@@ -819,6 +819,12 @@ footer h4 {
   line-height: 1.4;
 }
 
+/* FAQ link inside cart info section */
+.faq-link {
+  color: #744976;
+  text-decoration: none;
+}
+
 /* Empty cart message */
 #empty-cart-message {
   color: #bfbfbf;
