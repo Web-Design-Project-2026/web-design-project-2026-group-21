@@ -21,6 +21,8 @@ addToCartButtons.forEach((button) => {
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
+    updateCartBadge();
+
     button.textContent = "Added";
 
     setTimeout(() => {

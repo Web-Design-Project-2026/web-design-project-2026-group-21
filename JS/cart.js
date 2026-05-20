@@ -48,6 +48,8 @@ function renderCart() {
   cartCount.textContent = count;
   cartTotal.textContent = total + " SEK";
 
+  updateCartBadge();
+
   addQuantityButtonEvents();
 }
 function addQuantityButtonEvents() {
