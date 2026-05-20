@@ -818,3 +818,10 @@ footer h4 {
   font-size: 14px;
   line-height: 1.4;
 }
+
+/* Empty cart message */
+#empty-cart-message {
+  color: #bfbfbf;
+  font-size: 16px;
+  margin: 25px 0;
+}

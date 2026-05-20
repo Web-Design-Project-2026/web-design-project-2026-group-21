@@ -1,9 +1,16 @@
 const cartItemsContainer = document.getElementById("cart-items");
 const cartCount = document.getElementById("cart-count");
 const cartTotal = document.getElementById("cart-total");
+const emptyCartMessage = document.getElementById("empty-cart-message");
 
 function renderCart() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  if (cart.length === 0) {
+    emptyCartMessage.style.display = "block";
+  } else {
+    emptyCartMessage.style.display = "none";
+  }
 
   cartItemsContainer.innerHTML = "";
 
