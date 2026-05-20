@@ -623,8 +623,8 @@ footer h4 {
 }
 
 /* Ticket card section */
-.ticket.options {
-  padding: 40px 50px;
+.ticket-options {
+  padding: 50px 50px 40px;
   background-color: #0a0a0a;
 }
 
@@ -639,9 +639,11 @@ footer h4 {
 
 /* container for all ticket cards */
 .ticket-cards {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  gap: 70px;
+  justify-content: space-between;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -707,4 +709,68 @@ footer h4 {
   letter-spacing: 3px;
   cursor: pointer;
   width: 170px;
+}
+
+/* After party ticket section */
+.after-party-section {
+  background-color: #0a0a0a;
+  padding: 20px 50px 50px;
+}
+
+/* Main border box */
+.after-party-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #2b2b2b;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Image on the left side */
+.after-party-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* Right side content */
+.after-party-details h2 {
+  font-family: "Playfair Display", serif;
+  color: #744976;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.after-party-details p {
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 440px;
+}
+
+/* Feature list inside after party section */
+.after-party-details .ticket-features {
+  margin-top: 35px;
+}
+
+/* Price and button row */
+.after-party-action {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.after-party-action .ticket-price {
+  margin: 0;
+  color: #744976 !important;
+  font-size: 28px !important;
+  white-space: nowrap;
 }
