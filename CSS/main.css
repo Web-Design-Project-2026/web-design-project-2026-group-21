@@ -1,0 +1,1258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensures that images are responsive and do not overflow their containers */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Makes the header "float" at the top of the page */
+
+header {
+  position: sticky;
+  top: 0;
+  height: auto;
+  background-color: #2b2b2b;
+  padding: 1rem 0.5rem;
+  z-index: 10;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #f5f5f5;
+}
+
+/* Global responsive design */
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .nav-list {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .nav-icon {
+    width: 1.5rem;
+  }
+
+  footer {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
+}
+
+/* Tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-list {
+    padding: 0 2rem;
+    gap: 2rem;
+  }
+
+  footer {
+    padding: 2rem 3rem;
+    gap: 2rem;
+  }
+}
+
+/* Desktop mode */
+
+@media (min-width: 1025px) {
+  .nav-list {
+    padding: 0 3rem;
+    gap: 4rem;
+  }
+
+  footer {
+    padding: 3rem 4rem;
+    gap: 3rem;
+  }
+
+  .footer-logo img {
+    width: 200px;
+  }
+}
+
+/* Navigation bar styling */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  gap: 4rem;
+  margin: 0;
+}
+
+.nav-link {
+  color: #f5f5f5;
+  font-family:
+    Playfair Display,
+    serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav-spacer {
+  flex: 1;
+}
+
+/* Controls home and cart icons in the navigation bar */
+
+.nav-icon {
+  width: 2rem;
+  height: auto;
+  filter: invert(
+    100%
+  ); /* Inverts the colours of the icons from black to white */
+}
+
+/* Cart badge in header */
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+#cart-badge {
+  position: absolute;
+  top: -10px;
+  right: -14px;
+  background-color: #744976;
+  color: #f5f5f5;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero section styling */
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image,
+.hero-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Linear gradient overlay on top of the hero image */
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo {
+  width: 60%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Buttons container on the hero image */
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Styling for the "GET TICKETS" button */
+
+.button-tickets {
+  text-decoration: none;
+  background-color: #744976;
+  color: #f5f5f5;
+  padding: 0.5rem 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+/* Makes the button a darker shade of purple when hovered over */
+
+.button-tickets:hover {
+  background-color: #5a3560;
+  transform: translateY(-2px);
+}
+
+/* Styling for the "VIEW MORE" button */
+
+.button-more {
+  text-decoration: none;
+  background-color: #2b2b2b;
+  color: #f5f5f5;
+  border: #f5f5f5 1px solid;
+  padding: 0.5rem 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+/* Makes the button a lighter shade of grey when hovered over */
+
+.button-more:hover {
+  background-color: #4b4b4b;
+  transform: translateY(-2px);
+}
+
+/* About Spring Inspiration section styling */
+
+.about {
+  display: flex;
+  gap: 2rem;
+  padding: 4rem 0 4rem 4rem;
+}
+
+.about-text {
+  flex: 1;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 5rem;
+  line-height: 1.6;
+}
+
+.about-text h2 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  flex: 2;
+}
+
+.about-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Responsive design for the hero section (homepage) */
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+  .button-tickets,
+  .button-more {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .about-text {
+    padding: 0 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .button-tickets,
+  .button-more {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .about {
+    gap: 1.5rem;
+    padding: 3rem 0 3rem 3rem;
+  }
+
+  .about-image img {
+    height: 400px;
+  }
+}
+
+/* Desktop mode */
+
+@media (min-width: 1025px) {
+  .button-tickets,
+  .button-more {
+    font-size: 1.2rem;
+    padding: 0.75rem 1rem;
+  }
+
+  about-image img {
+    height: 500px;
+  }
+}
+
+/* Gallery page styling */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.gallery-item-horizontal {
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.gallery-item-horizontal img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gallery-item-vertical img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Logos on top of the images in the gallery */
+
+.gallery-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-logo img {
+  max-width: clamp(150px, 20vw, 400px);
+  height: auto;
+}
+
+.logo-koonverd {
+  filter: invert(100%);
+}
+
+/* Responsive design for the gallery page */
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .gallery-item-horizontal {
+    grid-column: 1;
+  }
+
+  .gallery-item-horizontal img {
+    height: auto;
+  }
+
+  .gallery-item-vertical img {
+    height: auto;
+  }
+}
+
+/* Tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .gallery-item-horizontal {
+    grid-column: 1 / -1;
+  }
+
+  .gallery-item-horizontal img {
+    height: auto;
+  }
+
+  .gallery-item-vertical img {
+    height: auto;
+  }
+}
+
+/* Desktop mode */
+@media (min-width: 1025px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gallery-item-horizontal {
+    grid-column: 1 / -1;
+  }
+}
+
+/* CART PAGE */
+
+/* Main cart page background and text color */
+.cart-page {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+}
+
+/* Hero section */
+.cart-hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero image and dark overlay on top */
+.cart-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient
+    (to right, rgba (0, 0, 0, 0.95), rgba (0, 0, 0, 0.35));
+}
+
+/* Hero image text */
+.cart-hero-text {
+  position: relative;
+  z-index: 2;
+  padding-left: 90px;
+}
+
+/* Main Cart heading*/
+.cart-hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 90px;
+  letter-spacing: 6px;
+  font-weight: normal;
+}
+
+/* Text under the Cart heading*/
+.cart-hero-text p {
+  max-width: 420px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 1.5;
+}
+
+/* Content area under the hero section */
+.cart-content {
+  padding: 50px;
+  background-color: #0a0a0a;
+}
+
+/* "Your items" heading and ticket info */
+.cart-content h2 {
+  color: #744976;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  border: 1px solid #2b2b2b;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 140px 130px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.cart-item-info h3 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.cart-item-info p {
+  color: #bfbfbf;
+  margin-bottom: 5px;
+}
+
+.cart-price {
+  color: #744976;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+/* Quantity box */
+.cart-quantity {
+  border: 1px solid #2b2b2b;
+  width: 130px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart-quantity button {
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity-number {
+  color: #f5f5f5;
+  font-size: 18px;
+}
+
+/* Total price section */
+.cart-total {
+  border: 1px solid #2b2b2b;
+  padding: 20px 35px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-total button {
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.cart-total button:hover {
+  background-color: #5a3560;
+  transform: translateY(-2px);
+}
+
+/* Continue shopping button */
+.continue-shopping {
+  display: inline-block;
+  margin-top: 60px;
+  background-color: #2b2b2b;
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.continue-shopping:hover {
+  background-color: #4b4b4b;
+  transform: translateY(-2px);
+}
+/* Total price */
+.cart-total p {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cart-total span {
+  color: #744976;
+}
+
+/* Checkout button */
+.cart-total button {
+  background-color: #744976;
+  color: #f5f5f5;
+  border: none;
+  padding: 14px 45px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+/* Checkout message */
+#checkout-message {
+  color: #744976;
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+/* Information box section */
+.cart-info {
+  border: 1px solid #2b2b2b;
+  margin-top: 20px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  text-align: center;
+}
+
+.cart-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-info-box h3 {
+  font-family: "Playfair Display", serif;
+  color: #744976;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.cart-info-box p {
+  color: #f5f5f5;
+  font-size: 15px;
+  line-height: 1.4;
+  max-width: 240px;
+}
+
+/* Responsiveness for the cart page */
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+  .cart-hero {
+    height: 300px;
+  }
+
+  .cart-hero-text {
+    padding-left: 2rem;
+  }
+
+  .cart-hero-text h1 {
+    font-size: 50px;
+  }
+  .cart-content {
+    padding: 20px;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .cart-total {
+    flex-direction: left;
+    gap: 15px;
+    text-align: left;
+  }
+
+  .cart-info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cart-hero-text h1 {
+    font-size: 70px;
+  }
+
+  .cart-content {
+    padding: 30px;
+  }
+
+  .cart-info {
+    grid-template-columns: repeat (2, 1fr);
+  }
+}
+
+/* Desktop mode */
+
+@media (min-width: 1025px) {
+  .cart-hero {
+    height: 600px;
+  }
+
+  .cart-hero-text h1 {
+    font-size: 100px;
+  }
+}
+
+/* TICKETS PAGE */
+
+/* Main tickets page background and text color */
+.tickets-page {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+}
+
+/* Hero section */
+.tickets-hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero image and dark overlay */
+.tickets-hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tickets-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient (to right, rgba (0, 0, 0.95), rgba (0, 0, 0.25));
+}
+
+/* Hero image text */
+.tickets-hero-text {
+  position: relative;
+  z-index: 2;
+  padding-left: 70px;
+  max-width: 520px;
+}
+
+/* Event info row under hero section*/
+.event-info {
+  background-color: #0a0a0a;
+  padding: 25px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  border-bottom: 1px solid #2b2b2b;
+}
+/* Each event info block */
+.event-info-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* icon */
+.event-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Event info headings */
+.event-info-item h3 {
+  color: #744976;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+
+/* Event info text */
+.event-info-item {
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
+/* TICKETS heading and text under heading */
+.tickets-hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.tickets-hero-text p {
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 1.6;
+}
+
+/* Ticket card section */
+.ticket-options {
+  padding: 50px 50px 40px;
+  background-color: #0a0a0a;
+}
+
+.ticket-options h2 {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* container for all ticket cards */
+.ticket-cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ticket-card {
+  border: 1px solid #2b2b2b;
+  padding: 25px;
+  width: 260px;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-8px);
+  border-color: #744976;
+  box-shadow: 0 10px 25px rgba(116, 73, 118, 0.25);
+}
+
+.ticket-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.ticket-card p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #f5f5f5;
+}
+
+/* Small feature list inside each ticket card */
+.ticket-features {
+  list-style: none;
+  padding: 0;
+  margin: 25px;
+}
+
+/* Each feature row */
+.ticket-features li {
+  color: #bfbfbf;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Small purple icon before each feature */
+.ticket-features li::before {
+  content: "✓";
+  color: #744976;
+  margin-right: 8px;
+}
+/* ticket price */
+.ticket-price {
+  color: #744976 !important;
+  font-size: 20px !important;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/* add to cart button */
+.add-to-cart-btn {
+  background-color: #744976;
+  color: #f5f5f5;
+  border: none;
+  padding: 12px 35px;
+  text-transform: uppdercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: 170px;
+}
+
+/* After party ticket section */
+.after-party-section {
+  background-color: #0a0a0a;
+  padding: 20px 50px 50px;
+}
+
+/* Main border box */
+.after-party-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #2b2b2b;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.after-party-content:hover {
+  transform: translateY(-8px);
+  border-color: #744976;
+  box-shadow: 0 10px 25px rgba(116, 73, 118, 0.25);
+}
+
+/* Image on the left side */
+.after-party-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* Right side content */
+.after-party-details h2 {
+  font-family: "Playfair Display", serif;
+  color: #744976;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.after-party-details p {
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 440px;
+}
+
+/* Feature list inside after party section */
+.after-party-details .ticket-features {
+  margin-top: 35px;
+}
+
+/* Price and button row */
+.after-party-action {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.after-party-action .ticket-price {
+  margin: 0;
+  color: #744976 !important;
+  font-size: 28px !important;
+  white-space: nowrap;
+}
+
+/* FAQ section */
+.faq-section {
+  background-color: #0a0a0a;
+  padding: 0 50px 60px;
+}
+
+.faq-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #2b2b2b;
+  padding: 30px;
+}
+
+.faq-section h2 {
+  font-family: "Playfair Display", serif;
+  color: #744976;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.faq-item h3 {
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  color: #f5f5f5;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Responsiveness for the tickets page */
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+  .tickets-hero {
+    height: 300px;
+  }
+
+  .tickets-hero-text {
+    padding-left: 2rem;
+  }
+
+  .tickets-hero-text h1 {
+    font-size: 40px;
+  }
+
+  .tickets-hero-text p {
+    font-size: 14px;
+  }
+
+  .event-info {
+    grid-template-columns: repeat (2, 1fr);
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .ticket-options {
+    padding: 30px 20px;
+  }
+
+  .ticket-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ticket-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .after-party-content {
+    grid-template-columns: 1fr;
+  }
+
+  .after-party-image {
+    height: 250px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tickets-hero-text h1 {
+    font-size: 60px;
+  }
+
+  .ticket-cards {
+    justify-content: center;
+  }
+
+  .ticket-card {
+    width: 220px;
+  }
+
+  .faq-grid {
+    grid-template-columns: repeat (2, 1fr);
+  }
+}
+
+/* Desktop mode */
+
+@media (min-width: 1025px) {
+  .tickets-hero {
+    height: 650px;
+  }
+
+  .tickets-hero-text h1 {
+    font-size: 100px;
+  }
+
+  .ticket-cards {
+    max-width: 1300px;
+  }
+
+  .ticket-card {
+    width: 300px;
+  }
+
+  .after-party-content {
+    max-width: 1300px;
+  }
+  .faq-section {
+    max-width: 1300px;
+  }
+}
+
+/* FAQ link inside cart info section */
+.faq-link {
+  color: #744976;
+  text-decoration: none;
+}
+
+/* Empty cart message */
+#empty-cart-message {
+  color: #bfbfbf;
+  font-size: 16px;
+  margin: 25px 0;
+}
+
+/* Footer styling */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-stretch;
+  gap: 3rem;
+  padding: 3rem 4rem;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  position: relative;
+  z-index: 101;
+}
+
+/* Alligns all of the footer sections so that they are the same height and have space between them */
+.footer-logo,
+.footer-nav,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Menu and Follow Us sections */
+
+footer h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #744976;
+  white-space: nowrap;
+}
+
+/* Spring Inspiration logo and the copyright text */
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Copyright text */
+
+.footer-logo p {
+  white-space: nowrap;
+}
+
+/* Social media links */
+
+.footer-social a {
+  color: #f5f5f5;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+/* Scroll fade-in effect on all of the pages */
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  pointer-events: none;
+  z-index: 100;
+}

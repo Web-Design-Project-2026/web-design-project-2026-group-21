@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring Inspiration - Cart</title>
+
+    <!-- Playfair Display and Inter fonts typekit from Adobe Fonts -->
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation bar -->
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link active"
+              ><img
+                src="Assets/home-02-svgrepo-com.svg"
+                alt="Homepage icon"
+                class="nav-icon"
+            /></a>
+          </li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <!-- Adds space between the gallery and ticket pages in the navigation bar-->
+          <li class="nav-spacer"></li>
+          <li><a href="tickets.html" class="nav-link">Tickets</a></li>
+          <li>
+            <a href="cart.html" class="nav-link cart-link"
+              ><img
+                src="Assets/cart-4-svgrepo-com.svg"
+                alt="Cart icon"
+                class="nav-icon"
+              />
+              <span id="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="cart-page">
+        <section class="cart-hero">
+          <img src="img/_MG_6576-Edit.jpg" alt="models" class="cart-image" />
+
+          <div class="image-overlay"></div>
+
+          <div class="cart-hero-text">
+            <h1>CART</h1>
+            <p>Review your items and proceed to secure your tickets.</p>
+          </div>
+        </section>
+
+        <section class="cart-content">
+          <h2>Your items (<span id="cart-count">0</span>)</h2>
+
+          <!--Cart items will be added here from localStorage.-->
+
+          <div id="cart-items"></div>
+          <p id="empty-cart-message">Your cart is empty.</p>
+
+          <div class="cart-total">
+            <p>Total: <span id="cart-total">0 SEK</span></p>
+            <button id="checkout-btn">Checkout</button>
+          </div>
+
+          <p id="checkout-message"></p>
+
+          <div class="cart-buttons">
+            <a href="tickets.html" class="continue-shopping"
+              >← Continue Shopping
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <section class="cart-info">
+        <div class="cart-info-box">
+          <h3>E-tickets</h3>
+          <p>
+            Your tickets will be sent to your email. Show them on your phone at
+            the entrance.
+          </p>
+        </div>
+        <div class="cart-info-box">
+          <h3>Non- refundable</h3>
+          <p>
+            Tickets are non-refundable. Please see our terms and conditions.
+          </p>
+        </div>
+        <div class="cart-info-box">
+          <h3>Need help?</h3>
+          <p>
+            Check out our
+            <a href="tickets.html#faq" class="faq-link"> FAQ </a> or contact us
+            if you have any questions. <br /><br />
+            Email:<br />
+            Springinspiration.JSA@js.ju.se
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Left side of the footer with the Spring Inspiration logo and copyright text -->
+      <div class="footer-logo">
+        <img src="Assets/springinspiration.png" alt="Spring Inspiration logo" />
+        <p>&copy; Spring Inspiration 2026</p>
+      </div>
+      <!-- Middle section of the footer with the menu links -->
+      <div class="footer-nav">
+        <h4>Menu</h4>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-link">Homepage</a></li>
+          <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+          <li><a href="tickets.html" class="footer-link">Tickets</a></li>
+        </ul>
+      </div>
+
+      <!-- Right side of the footer with the social media links -->
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/springinspiration/?hl=en">
+          <img
+            src="Assets/instagram-svgrepo-com.svg"
+            alt="Instagram icon"
+            class="social-icon"
+          />
+          Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/@spring.inspiration">
+          <img
+            src="Assets/tik-tok-brand-assets-video-socialnetwork-oneline-svgrepo-com.svg"
+            alt="TikTok icon"
+            class="social-icon"
+          />
+          TikTok
+        </a>
+
+        <a href="https://www.facebook.com/Springinspiration">
+          <img
+            src="Assets/facebook-svgrepo-com.svg"
+            alt="Facebook icon"
+            class="social-icon"
+          />
+          Facebook
+        </a>
+      </div>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script src="JS/cart.js"></script>
+  </body>
+</html>
