@@ -451,82 +451,6 @@ h3 {
     grid-column: 1 / -1;
   }
 }
-/* Footer styling */
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-stretch;
-  gap: 3rem;
-  padding: 3rem 4rem;
-  background-color: #0a0a0a;
-  color: #f5f5f5;
-  position: relative;
-  z-index: 101;
-}
-
-/* Alligns all of the footer sections so that they are the same height and have space between them */
-.footer-logo,
-.footer-nav,
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Menu and Follow Us sections */
-
-footer h4 {
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: #744976;
-  white-space: nowrap;
-}
-
-/* Spring Inspiration logo and the copyright text */
-
-.footer-logo img {
-  width: 200px;
-  height: auto;
-}
-
-/* Copyright text */
-
-.footer-logo p {
-  white-space: nowrap;
-}
-
-/* Social media links */
-
-.footer-social a {
-  color: #f5f5f5;
-  font-size: 1rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.social-icon {
-  width: 24px;
-  height: 24px;
-  filter: invert(100%);
-}
-
-.footer-nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.footer-link {
-  color: #f5f5f5;
-  text-decoration: none;
-}
 
 /* CART PAGE */
 
@@ -1240,6 +1164,83 @@ footer h4 {
   color: #bfbfbf;
   font-size: 16px;
   margin: 25px 0;
+}
+
+/* Footer styling */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-stretch;
+  gap: 3rem;
+  padding: 3rem 4rem;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  position: relative;
+  z-index: 101;
+}
+
+/* Alligns all of the footer sections so that they are the same height and have space between them */
+.footer-logo,
+.footer-nav,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Menu and Follow Us sections */
+
+footer h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #744976;
+  white-space: nowrap;
+}
+
+/* Spring Inspiration logo and the copyright text */
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Copyright text */
+
+.footer-logo p {
+  white-space: nowrap;
+}
+
+/* Social media links */
+
+.footer-social a {
+  color: #f5f5f5;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link {
+  color: #f5f5f5;
+  text-decoration: none;
 }
 
 /* Scroll fade-in effect on all of the pages */
