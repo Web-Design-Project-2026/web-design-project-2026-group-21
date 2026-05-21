@@ -754,6 +754,71 @@ footer h4 {
   max-width: 240px;
 }
 
+/* Responsiveness for the cart page */
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+  .cart-hero {
+    height: 300px;
+  }
+
+  .cart-hero-text {
+    padding-left: 2rem;
+  }
+
+  .cart-hero-text h1 {
+    font-size: 50px;
+  }
+  .cart-content {
+    padding: 20px;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .cart-total {
+    flex-direction: left;
+    gap: 15px;
+    text-align: left;
+  }
+
+  .cart-info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cart-hero-text h1 {
+    font-size: 70px;
+  }
+
+  .cart-content {
+    padding: 30px;
+  }
+
+  .cart-info {
+    grid-template-columns: repeat (2, 1fr);
+  }
+}
+
+/* Desktop mode */
+
+@media (min-width: 1025px) {
+  .cart-hero {
+    height: 600px;
+  }
+
+  .cart-hero-text h1 {
+    font-size: 100px;
+  }
+}
+
 /* TICKETS PAGE */
 
 /* Main tickets page background and text color */
