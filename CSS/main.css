@@ -617,6 +617,7 @@ footer h4 {
 
 .continue-shopping:hover {
   background-color: #4b4b4b;
+  transform: translateY(-2px);
 }
 /* Total price */
 .cart-total p {
