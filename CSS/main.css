@@ -1063,6 +1063,107 @@ footer h4 {
   line-height: 1.4;
 }
 
+/* Responsiveness for the tickets page */
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+  .tickets-hero {
+    height: 300px;
+  }
+
+  .tickets-hero-text {
+    padding-left: 2rem;
+  }
+
+  .tickets-hero-text h1 {
+    font-size: 40px;
+  }
+
+  .tickets-hero-text p {
+    font-size: 14px;
+  }
+
+  .event-info {
+    grid-template-columns: repeat (2, 1fr);
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .ticket-options {
+    padding: 30px 20px;
+  }
+
+  .ticket-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ticket-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .after-party-content {
+    grid-template-columns: 1fr;
+  }
+
+  .after-party-image {
+    height: 250px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tickets-hero-text h1 {
+    font-size: 60px;
+  }
+
+  .ticket-cards {
+    justify-content: center;
+  }
+
+  .ticket-card {
+    width: 220px;
+  }
+
+  .faq-grid {
+    grid-template-columns: repeat (2, 1fr);
+  }
+}
+
+/* Desktop mode */
+
+@media (min-width: 1025px) {
+  .tickets-hero {
+    height: 650px;
+  }
+
+  .tickets-hero-text h1 {
+    font-size: 100px;
+  }
+
+  .ticket-cards {
+    max-width: 1300px;
+  }
+
+  .ticket-card {
+    width: 300px;
+  }
+
+  .after-party-content {
+    max-width: 1300px;
+  }
+  .faq-section {
+    max-width: 1300px;
+  }
+}
+
 /* FAQ link inside cart info section */
 .faq-link {
   color: #744976;
