@@ -160,29 +160,6 @@ h3 {
   background-color: #4b4b4b;
 }
 
-/* Responsive design for the hero section */
-
-@media (min-width: 1000px) {
-  .hero {
-    min-height: 700px;
-  }
-
-  .hero-image {
-    min-height: 600px;
-  }
-
-  .hero-logo {
-    width: 60%;
-    margin-bottom: 3rem;
-  }
-
-  .button-tickets,
-  .button-more {
-    font-size: 1.2rem;
-    padding: 0.75rem 1rem;
-  }
-}
-
 /* About Spring Inspiration section styling */
 
 .about {
@@ -214,30 +191,32 @@ h3 {
   object-fit: cover;
 }
 
-/* Responsive design for the About section */
+/* Responsive design for the hero section (homepage) */
 
-/* Desktop version */
+/* Mobile mode */
 
-@media (min-width: 1200px) {
-  .about {
-    flex-direction: row;
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 60%;
   }
-}
 
-/* Mobile and tablet version */
+  .button-tickets,
+  .button-more {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.6rem;
+  }
 
-@media (max-width: 1000px) {
   .about {
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
   .about-image {
-    margin: 0 -2rem;
+    width: 100%;
   }
 
   .about-image img {
-    height: 400px;
+    height: auto;
     object-fit: cover;
   }
 
@@ -245,6 +224,47 @@ h3 {
     padding: 0 2rem;
     margin-top: 0;
     margin-bottom: 2rem;
+  }
+}
+
+/* Tablet mode */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-logo {
+    width: 50%;
+  }
+
+  .button-tickets,
+  .button-more {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .about {
+    gap: 1.5rem;
+    padding: 3rem 0 3rem 3rem;
+  }
+
+  .about-image img {
+    height: 400px;
+  }
+}
+
+/* Desktop mode */
+
+@media (min-width: 1025px) {
+  .hero-logo {
+    width: 40%;
+  }
+
+  .button-tickets,
+  .button-more {
+    font-size: 1.2rem;
+    padding: 0.75rem 1rem;
+  }
+
+  about-image img {
+    height: 500px;
   }
 }
 
